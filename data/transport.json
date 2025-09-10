@@ -1,0 +1,5 @@
+[
+  { "name": "bus station", "lat": 41.8151, "lng": 44.7271 },
+  { "name": "taxi Rideshare", "lat": 41.8185, "lng": 44.820},
+  { "name": "public transport", "lat": 41.7800, "lng": 44.7300 }
+]

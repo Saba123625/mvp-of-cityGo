@@ -5,95 +5,33 @@ body.index-page{
     background-position: center;
     background-repeat: no-repeat;
      font-family: Arial, sans-serif; 
+    }
+
+html{
+    font-size: 10px;
+}
+.parkingbody{
+    background-color: rgba(18, 128, 106, 1);
 }
 
-.ul{
-    display: flex;
-    gap: 10rem;
-    font-size: large;
-    justify-content: center;
-}
 .headertitle{
     text-align: center;
     color: green;
     font-size: 3rem;
+    justify-content: center;
 }
 .slogan{
-text-align: center;
-font-size: 1.5rem;
-color: black;
-margin-top: 6rem;
-}
-.card {
-    display: block;           
-  text-decoration: none;    
-  color: inherit;           
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-section{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    justify-content: center;
-    margin-top: 10rem;
-    border-radius: 10px;
-     
-    padding: 15px;
     text-align: center;
-   background: transparent;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    align-items: center;
+    font-size: 1.5rem;
+     margin: 0; 
 }
-.features {
-            background-color: transparent;
-            padding: 40px 20px;
-            margin: 40px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
- }
-  .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-        .feature {
-            text-align: center;
-            padding: 20px;
-        }
-        .feature-icon {
-            font-size: 3.5rem;
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-        .feature h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: red;
-        }
-        
-        .feature p {
-            font-size: 1.4rem;
-            color: var(--gray);
-        }
-    .section-title{
-        text-align: center;
-        font-size: 2rem;
-        color: green;
-    }
+    
     #map {
-  height: 400px;
+  height: 30rem;
   width: 100%;
   border-radius: 10px;
-  margin: 20px 0;
+  margin: 10rem 0;
 }
 .image{
     width: 9rem;
@@ -102,4 +40,353 @@ section{
     display: flex;
     justify-content: center;
 }
+.bottom-bar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 
+        0 -2px 6px rgba(0, 0, 0, 0.15),
+    0 -4px 12px rgba(0, 0, 0, 0.10),
+    0 -8px 24px rgba(0, 0, 0, 0.08);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.secondColumn {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+.secondColumn.show {
+  max-height: 100px; 
+  opacity: 1;
+  overflow: visible;
+}
+.btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+    padding: 0;
+    margin: 0;
+    
+}
+.toggle-btn{
+    border-radius: 10rem;
+  position: absolute;
+  top: -2rem;         
+  left: 50%; 
+  transform: translateX(-50%);
+   z-index: 10;
+}
 
+.imagebackground{
+    width: 100%;
+    height: 24rem;
+}
+
+.search-input{
+    position: absolute;
+    top: 12rem;
+    left: 5%;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: rgba(23, 141, 126, 0.87);
+    z-index: 999;
+    color: rgba(255, 255, 255, 0.5);
+}
+.register{
+    font-size: 2rem;
+       background: linear-gradient(90deg, #ff512f, #dd2476);
+    text-align: center;
+      color: white;
+      padding: 0.5rem 2rem;
+      border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease ;
+      letter-spacing: 1px;
+      cursor: pointer;
+      position: absolute;
+      right: 4rem;
+      top: 5rem;
+}
+ .register:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    @media(max-width : 750px){
+        .register{
+            padding: 0.1rem 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+    }
+    @media(max-width : 500px){
+        .headertitle{
+            font-size: 2.4rem;
+        }
+        .image{
+            width: 7rem;
+        }
+        .register{
+            right: 1rem;
+        }
+        
+         
+         .slogan{
+            font-size: 1.3rem;
+         }
+         .transparent-card{
+            width: 15rem;
+            height: 3rem;
+         }
+         .searchinput{
+            font-size: 1.2rem !important;
+         }
+    }
+   
+    .card{
+        width: 10rem;
+        height: 8rem;
+         
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+         justify-content: center;  
+  align-items: center; 
+    }
+    .card-overlay{
+         position: absolute;
+         inset: 0; 
+         background: rgba(0,0,0,0.5); 
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         text-align: center;
+         
+   }
+   .container{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;  
+    align-items: flex-end;                 
+    padding-bottom: 3rem; 
+   }
+.card1{
+    width: 15rem;
+    height: 11rem;
+    background-color: rgba(166, 240, 162, 1);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 5px 5px;
+   height: 100%; 
+}
+.card1 .card-overlay1{
+   font-size: 1.2rem;
+}
+.alldiv{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.card2{
+    width: 15rem;
+    height: 13rem;
+    background-color: rgba(166, 240, 162, 1);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 5px 5px;
+     height: 100%; 
+}
+.card2 .card-overlay2{
+   font-size: 1.2rem;
+}
+.card3{
+    width: 15rem;
+    height: 16rem;
+    background-color: rgba(166, 240, 162, 1);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 5px 5px;
+     height: 100%; 
+}
+.card3 .card-overlay3{
+   font-size: 1.2rem;
+}
+@media(max-width : 574px){
+.card1 .card-overlay1{
+   font-size: 1rem;
+}
+.card2 .card-overlay2{
+   font-size: 1rem;
+}
+.card3 .card-overlay3{
+   font-size: 1rem;
+}
+}
+@media(max-width : 436px){
+    .card1{
+    width: 15rem;
+    height: 13rem;
+     height: 100%; 
+    }
+    .card2{
+    width: 15rem;
+    height: 13rem;
+     height: 100%; 
+    }
+    .card3{
+    width: 15rem;
+    height: 13rem;
+     height: 100%; 
+    }
+}
+.transparent-card {
+   
+    width: 18rem;
+    height: 5rem;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;                     
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    
+}
+.parent-container{
+display: flex;
+justify-content: center;
+}
+body.Registration-page{
+    font-size: 10px;
+    background-image: url(assests/09138411a06106f5685e634ccf31278b75209035.jpg);
+   font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registrationtitle{
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.5rem;
+}
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    width: 320px;
+    text-align: center;
+    color: #fff;
+}
+.form-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.register-btn {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.register-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+.headertitletransport{
+    font-size: 3rem;
+    color: green;
+    position: absolute;
+    left: 8rem;
+    
+}
+.location{
+    width: 10rem;
+    height: 5rem;
+    transform: translateY(1rem);
+}
+.headerdiv{
+    display: flex;
+}
+#map1{
+   
+    margin-top: 5rem;
+}
+
+
+.icon_names{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.icon-texts{
+    text-align: center;
+}
+.Departuresbusicon{
+    display: flex;
+}
+.DeparturesTrolleybusicon{
+    display: flex;
+}
+.DeparturesP{
+    margin-left: 3rem;
+}
+.searchinput{
+     position: absolute;
+    top: 7rem;
+    left: 10%;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+.leaflet-routing-container {
+    max-width: 300px;
+    background: rgba(255,255,255,0.9); 
+    border-radius: 0.5rem;
+}
+@media (max-width: 600px) {
+    .leaflet-routing-container {
+        font-size: 0.8rem;
+        max-width: 200px;
+    }
+    .leaflet-routing-instructions {
+        font-size: 0.7rem;
+    }
+    .search-input{
+        font-size: 1.1rem;
+        width: 17rem;
+        height: 2rem;
+    }
+}
+.parkingButton{
+    position: absolute;
+    left: 30%;
+    background-color: rgba(3, 218, 187, 1);
+    width: 19rem;
+    height: 4rem;
+    font-size: 2rem;
+}

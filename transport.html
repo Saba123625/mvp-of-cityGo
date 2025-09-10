@@ -3,43 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CityGo</title>
+    <link rel="icon" href="assests/favicon.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
   </head>
   <body>
     <header>
-      <h1 class="headertitle">cityGo</h1>
-      <p class="slogan">ყველა ქალაქის სერვისი ერთ აპლიკაციაში</p>
+      <div class="headerdiv">
+        <img src="assests/location image.png" class="location" alt="Location" />
+        <h1 class="headertitletransport">cityGo</h1>
+      </div>
+      <a href="Registration.html"
+        ><button class="register">რეგისტრაცია</button></a
+      >
     </header>
     <main>
-      <section>
-        <a href="index.html" class="card">
-          <h2>მთავარი გერდი</h2>
-        </a>
-        <a href="ecology.html" class="card">
-          <h2>🌳 მწვანე სივრცეები</h2>
-          <p>იპოვე შენი უბნის ბაღები და პარკები.</p>
-        </a>
-        <a href="transport.html" class="card">
-          <h2>🚍 ტრანსპორტი</h2>
-          <p>ნახე რეალურ დროში ავტობუსების და მეტროს განრიგი.</p>
-        </a>
-
-        <a href="parking.html" class="card">
-          <h2>🅿️ პარკინგი</h2>
-          <p>იპოვე თავისუფალი ადგილები Google Maps-ზე.</p>
-        </a>
-
-        <a href="utilities.html" class="card">
-          <h2>💡 კომუნალურები</h2>
-          <p>გაიგე შენი გადასახადების სტატუსი ერთ ადგილზე.</p>
-        </a>
-
-        <a href="news.html" class="card">
-          <h2>📰 სიახლეები</h2>
-          <p>გააზიარე და ნახე ახალი ამბები შენი ქალაქიდან.</p>
-        </a>
-      </section>
+      <div id="map1" style="height: 25rem; width: 100%"></div>
+      <div class="icon_names">
+        <div class="icon-texts">
+          <i class="fas fa-bus" style="font-size: 3rem; color: green"></i>
+          <p style="font-size: 1.3rem; color: green">public transport</p>
+        </div>
+        <div class="icon-texts">
+          <i class="fa-solid fa-taxi" style="font-size: 3rem; color: green"></i>
+          <p style="font-size: 1.3rem; color: green">Taxi / Rideshare</p>
+        </div>
+        <div class="icon-texts">
+          <i
+            class="fa-solid fa-bicycle"
+            style="font-size: 3rem; color: green"
+          ></i>
+          <p style="font-size: 1.3rem; color: green">Bike / scooter</p>
+        </div>
+      </div>
+      <h2 style="color: green; font-size: 2rem">Departures</h2>
+      <div style="margin-left: 3rem">
+        <div class="Departuresbusicon">
+          <i class="fas fa-bus" style="font-size: 3rem; color: green"></i>
+          <p
+            class="DeparturesP"
+            style="
+              color: green;
+              font-size: 2rem;
+              transform: translateY(-1.8rem);
+            "
+          >
+            Bus #42
+          </p>
+        </div>
+        <div class="DeparturesTrolleybusicon">
+          <i
+            class="fa-solid fa-train-tram"
+            style="font-size: 3rem; color: green"
+          ></i>
+          <p
+            class="DeparturesP"
+            style="
+              color: green;
+              font-size: 2rem;
+              transform: translateY(-1.8rem);
+            "
+          >
+            Trolleybus #6
+          </p>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="bottom-bar">
+        <div class="row firstColumn">
+          <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+          <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+          <button class="toggle-btn">⬆</button>
+          <a href="transport.html"
+            ><button class="btn">🚍ტრასნსპორტი</button></a
+          >
+        </div>
+        <div class="row secondColumn">
+          <a href="ecology.html"><button class="btn">🌳ეკოლოგია</button></a>
+          <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+          <a href="Utilities.html">
+            <button class="btn">💡კომუნალურები</button></a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="transport.js"></script>
   </body>
 </html>

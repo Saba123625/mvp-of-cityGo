@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CityGo</title>
+    <link rel="icon" href="assests/favicon.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,34 +13,29 @@
       <p class="slogan">ყველა ქალაქის სერვისი ერთ აპლიკაციაში</p>
     </header>
     <main>
-      <section>
-        <a href="index.html" class="card">
-          <h2>მთავარი გერდი</h2>
-        </a>
-        <a href="ecology.html" class="card">
-          <h2>🌳 მწვანე სივრცეები</h2>
-          <p>იპოვე შენი უბნის ბაღები და პარკები.</p>
-        </a>
-        <a href="transport.html" class="card">
-          <h2>🚍 ტრანსპორტი</h2>
-          <p>ნახე რეალურ დროში ავტობუსების და მეტროს განრიგი.</p>
-        </a>
-
-        <a href="parking.html" class="card">
-          <h2>🅿️ პარკინგი</h2>
-          <p>იპოვე თავისუფალი ადგილები Google Maps-ზე.</p>
-        </a>
-
-        <a href="utilities.html" class="card">
-          <h2>💡 კომუნალურები</h2>
-          <p>გაიგე შენი გადასახადების სტატუსი ერთ ადგილზე.</p>
-        </a>
-
-        <a href="news.html" class="card">
-          <h2>📰 სიახლეები</h2>
-          <p>გააზიარე და ნახე ახალი ამბები შენი ქალაქიდან.</p>
-        </a>
-      </section>
+      <a href="Registration.html"
+        ><button class="register">რეგისტრაცია</button></a
+      >
     </main>
+    <footer>
+      <div class="bottom-bar">
+        <div class="row firstColumn">
+          <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+          <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+          <button class="toggle-btn">⬆</button>
+          <a href="transport.html"
+            ><button class="btn">🚍ტრასნსპორტი</button></a
+          >
+        </div>
+        <div class="row secondColumn">
+          <a href="ecology.html"><button class="btn">🌳ეკოლოგია</button></a>
+          <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+          <a href="Utilities.html">
+            <button class="btn">💡კომუნალურები</button></a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="Utilities.js"></script>
   </body>
 </html>
