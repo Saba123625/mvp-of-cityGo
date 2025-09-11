@@ -24,6 +24,7 @@ form.addEventListener("submit", function(e){
     if(password.length < 6){
         message.textContent = "Password must be at least 6 characters!";
         message.style.color = "#ff6b6b";
+        message.style.fontSize = "1.9rem";
         return;
     }
 

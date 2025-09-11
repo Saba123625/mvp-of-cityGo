@@ -29,13 +29,13 @@ fetch('data/transport.json')
   });
 
   const parkingSpots = [
-  { "name": "bus station", "lat": 41.8151, "lng": 44.7271 },
-  { "name": "taxi Rideshare", "lat": 41.8185, "lng": 44.820},
-  { "name": "public transport", "lat": 41.7800, "lng": 44.7300 }
+  { "name": "ავტობუსი N1", "lat": 41.8151, "lng": 44.7271 },
+  { "name": "ავტობუსი N2", "lat": 41.8185, "lng": 44.820},
+  { "name": "ავტობუსი N3", "lat": 41.7800, "lng": 44.7300 }
 ];
 
 const searchInput = document.createElement("input");
-searchInput.placeholder = "where aryou going?";
+searchInput.placeholder = "where are you going?";
 searchInput.classList.add("searchinput");
 document.body.appendChild(searchInput);
 

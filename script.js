@@ -38,7 +38,7 @@ const parkingSpots = [
 ];
 
 const searchInput = document.createElement("input");
-searchInput.placeholder = "Search by street or parking number";
+searchInput.placeholder = "Search by street or parking";
 searchInput.classList.add("search-input");
 document.body.appendChild(searchInput);
 

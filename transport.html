@@ -16,67 +16,41 @@
       href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
     />
   </head>
-  <body>
+  <body style="background-color: rgba(18, 128, 106, 1)">
     <header>
-      <div class="headerdiv">
-        <img src="assests/location image.png" class="location" alt="Location" />
-        <h1 class="headertitletransport">cityGo</h1>
-      </div>
       <a href="Registration.html"
         ><button class="register">რეგისტრაცია</button></a
       >
     </header>
     <main>
       <div id="map1" style="height: 25rem; width: 100%"></div>
-      <div class="icon_names">
-        <div class="icon-texts">
-          <i class="fas fa-bus" style="font-size: 3rem; color: green"></i>
-          <p style="font-size: 1.3rem; color: green">public transport</p>
-        </div>
-        <div class="icon-texts">
-          <i class="fa-solid fa-taxi" style="font-size: 3rem; color: green"></i>
-          <p style="font-size: 1.3rem; color: green">Taxi / Rideshare</p>
-        </div>
-        <div class="icon-texts">
-          <i
-            class="fa-solid fa-bicycle"
-            style="font-size: 3rem; color: green"
-          ></i>
-          <p style="font-size: 1.3rem; color: green">Bike / scooter</p>
-        </div>
-      </div>
-      <h2 style="color: green; font-size: 2rem">Departures</h2>
-      <div style="margin-left: 3rem">
-        <div class="Departuresbusicon">
-          <i class="fas fa-bus" style="font-size: 3rem; color: green"></i>
-          <p
-            class="DeparturesP"
-            style="
-              color: green;
-              font-size: 2rem;
-              transform: translateY(-1.8rem);
-            "
-          >
-            Bus #42
-          </p>
-        </div>
-        <div class="DeparturesTrolleybusicon">
-          <i
-            class="fa-solid fa-train-tram"
-            style="font-size: 3rem; color: green"
-          ></i>
-          <p
-            class="DeparturesP"
-            style="
-              color: green;
-              font-size: 2rem;
-              transform: translateY(-1.8rem);
-            "
-          >
-            Trolleybus #6
-          </p>
-        </div>
-      </div>
+
+      <ul
+        class="transportUL"
+        style="
+          margin: 3rem 7rem;
+          font-size: 1.1rem;
+          color: rgba(255, 255, 255, 1);
+          transform: translateX(-8rem);
+        "
+      >
+        <li style="margin-bottom: 1rem">
+          ავტობუსი N1 გასვლა:13:30 საათი მიმართულება:ქ.ლაგოდეხი-სოფ.ბოლქვი
+          მოსვლის დრო:15:00 საათი
+        </li>
+        <li style="margin-bottom: 1rem">
+          ავტობუსი N2 გასვლა:14:00 საათი მიმართულება:ქ.ლაგოდეხი-სოფ.ჭიაური
+          მოსვლის დრო:19:40 საათი
+        </li>
+        <li style="margin-bottom: 1rem">
+          ავტობუსი N3 გასვლა:07:00 საათი მიმართულება:ქ.ლაგოდეხი-სოფ.ლელიანი
+          მოსვლის დრო:08:00 საათი
+        </li>
+        <li style="margin-bottom: 1rem">
+          ავტობუსი N4 გასვლა:18:00 საათი მიმართულება:ქ.ლაგოდეხი-სოფ.ჰერეთისკარი
+          მოსვლის დრო:20:00 საათი
+        </li>
+      </ul>
     </main>
     <footer>
       <div class="bottom-bar">
