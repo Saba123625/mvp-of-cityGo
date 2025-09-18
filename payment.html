@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityGo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assests/favicon.png" type="image/png" />
+  </head>
+  <body class="payment-body">
+    <main class="payment-container">
+      <h1 class="title">💳 გადასახადის გადახდა</h1>
+
+      <form class="payment-form">
+        <label>
+          ბარათის ნომერი
+          <input
+            type="text"
+            placeholder="0000 0000 0000 0000"
+            maxlength="19"
+            required
+          />
+        </label>
+
+        <label>
+          ვადის ამოწურვა
+          <input type="text" placeholder="MM/YY" maxlength="5" required />
+        </label>
+
+        <label>
+          CVV
+          <input type="password" placeholder="123" maxlength="3" required />
+        </label>
+
+        <label>
+          თანხა
+          <input type="number" placeholder="₾" required />
+        </label>
+
+        <button type="submit" class="pay-btn">გადახდა</button>
+      </form>
+    </main>
+    <script>
+      document
+        .querySelector(".payment-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("გადახდა წარმატებით დასრულდა!");
+          window.location.href = "economyandutilities.html";
+        });
+    </script>
+  </body>
+</html>
