@@ -1,3 +1,5 @@
+
+
 const togleButton = document.querySelector(".toggle-btn");
 const secondColumn = document.querySelector(".secondColumn");
 togleButton.addEventListener("click", () => {
@@ -27,9 +29,15 @@ form.addEventListener("submit", function(e){
         message.style.fontSize = "1.9rem";
         return;
     }
-
+    const user = {
+        username: username,
+        password: password,
+        email: email,
+    };
+    localStorage.setItem ("user", JSON.stringify(user));
+    localStorage.setItem("isLoggedIn", "true");
+    message.style.fontSize = "1.9rem";
     message.textContent = `Welcome, ${username}! Registration successful.`;
-    message.style.color = "#22ad76ff";
-
-   
+    message.style.color = "#22ad76ff";   
 });
+

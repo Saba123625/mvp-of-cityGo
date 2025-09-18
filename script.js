@@ -92,3 +92,12 @@ startBtn.addEventListener("click", () => {
     }
   }).addTo(map);
 });
+
+document.addEventListener( "DOMContentLoaded", () =>{
+const loggdin = localStorage.getItem("isLoggedIn");
+
+if(!loggdin){
+alert("საჭიროა რეგისტრაცია");
+window.location.href = "Registration.html";
+}
+});

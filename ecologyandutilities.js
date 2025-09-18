@@ -12,3 +12,14 @@ alert("საჭიროა რეგისტრაცია");
 window.location.href = "Registration.html";
 }
 });
+document.addEventListener( "DOMContentLoaded",()=>{
+    setTimeout(() =>{
+        const notifications = document.querySelectorAll(".notificationsDiv");
+        notifications.forEach((note, index) => {
+            setTimeout(() =>{
+                note.style.opacity = 1;
+
+            },index * 500);
+        });
+    }, 5000);
+});

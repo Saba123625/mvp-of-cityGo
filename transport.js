@@ -28,28 +28,30 @@ fetch('data/transport.json')
     });
   });
 
-  const parkingSpots = [
+  const busStops  = [
   { "name": "ავტობუსი N1", "lat": 41.8151, "lng": 44.7271 },
   { "name": "ავტობუსი N2", "lat": 41.8185, "lng": 44.820},
   { "name": "ავტობუსი N3", "lat": 41.7800, "lng": 44.7300 }
 ];
 
-const searchInput = document.createElement("input");
-searchInput.placeholder = "where are you going?";
-searchInput.classList.add("searchinput");
-document.body.appendChild(searchInput);
 
-let markers = [];
-searchInput.addEventListener("input", () => {
-  markers.forEach(m => map1.removeLayer(m));
-  markers = [];
 
-  const query = searchInput.value.toLowerCase();
-  parkingSpots.forEach(spot => {
-    if(spot.name.toLowerCase().includes(query)) {
-      const m = L.marker([spot.lat, spot.lng]).addTo(map1).bindPopup(spot.name).openPopup();
-      markers.push(m);
-      map1.setView([spot.lat, spot.lng], 15);
+busStops.forEach((stop) => {
+  L.marker([stop.lat, stop.lng])
+    .addTo(map1)
+    .bindPopup(`<b>${stop.name}</b>`);
+});
+
+
+document.querySelectorAll('.transportUL li').forEach(li => {
+  li.style.cursor = "pointer"; 
+  li.addEventListener('click', () => {
+    const busId = li.dataset.bus;       
+    const coords = busStops[busId];
+    if (coords) {
+      
+      map1.flyTo(coords, 14, { animate: true, duration: 1 });
     }
   });
 });
+
