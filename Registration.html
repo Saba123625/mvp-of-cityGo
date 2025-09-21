@@ -9,42 +9,52 @@
   </head>
   <body class="Registration-page">
     <header>
-      <h1 style="color: rgba(0, 66, 57, 1); font-size: 3rem; text-align: center;">შესვლა</h1>
-      <div class="Registrationdiv">
-        <p style="color: rgba(255, 255, 255, 1); font-size: 1.6rem; ">არ გაქვს აქაუნთი?</p>
-        <p style="font-size: 1.6rem; color: rgba(0, 66, 57, 1);">დარეგისტრირდი</p>
-      </div>
-        <h2 class="registrationtitle">გაიართ რეგისტრაცია აპში შესასვლელად</h2>
+      <h1
+        style="color: rgba(0, 66, 57, 1); font-size: 3rem; text-align: center"
+      >
+        შესვლა
+      </h1>
+
+      <h2 class="registrationtitle">გაიართ რეგისტრაცია აპში შესასვლელად</h2>
       <div class="form-container">
-          <form id="registrationForm">
-      <input type="text" id="username" placeholder="Username" required />
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <button type="submit" class="register-btn">დარეგისტრირდი</button>
-    </form>
-     <p id="message"></p>
-      
-        
+        <form id="registrationForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <p class="p-of-back" style="font-size: 1.6rem">
+            <a href="index.html">უკან დაბრუნება</a>
+          </p>
+          <div class="byttonofregitration">
+            <button type="submit" class="register-btn">დარეგისტრირდი</button>
+          </div>
+        </form>
+        <p id="message"></p>
+      </div>
     </header>
     <main></main>
-     <footer>
+    <footer>
       <div class="mobile-only">
-      <div class="bottom-bar">
-        <div class="row firstColumn">
-          <a href="index.html"><button class="btn">🏠მთავარი</button></a>
-          <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
-          <button class="toggle-btn">⬆</button>
-          <a href="transport.html"
-            ><button class="btn">🚍ტრასნსპორტი</button></a
-          >
+        <div class="bottom-bar">
+          <div class="row firstColumn">
+            <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+            <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+            <button class="toggle-btn">⬆</button>
+            <a href="transport.html"
+              ><button class="btn">🚍ტრასნსპორტი</button></a
+            >
+          </div>
+          <div class="row secondColumn">
+            <a href="economyandutilities.html"
+              ><button class="btn">🌳ეკოლოგია და 💡კომუნალურები</button></a
+            >
+            <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+          </div>
         </div>
-        <div class="row secondColumn">
-          <a href="economyandutilities.html"
-            ><button class="btn">🌳ეკოლოგია და 💡კომუნალურები</button></a
-          >
-          <a href="news.html"><button class="btn">📰სიახლეები</button></a>
-        </div>
-      </div>
       </div>
     </footer>
     <script src="Registration.js"></script>

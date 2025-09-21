@@ -36,10 +36,32 @@
           თანხა
           <input type="number" placeholder="₾" required />
         </label>
-
+        <p class="p-of-back" style="font-size: 1.6rem">
+          <a href="economyandutilities.html">უკან დაბრუნება</a>
+        </p>
         <button type="submit" class="pay-btn">გადახდა</button>
       </form>
     </main>
+    <footer>
+      <div class="mobile-only">
+        <div class="bottom-bar">
+          <div class="row firstColumn">
+            <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+            <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+            <button class="toggle-btn">⬆</button>
+            <a href="transport.html"
+              ><button class="btn">🚍ტრასნსპორტი</button></a
+            >
+          </div>
+          <div class="row secondColumn">
+            <a href="economyandutilities.html"
+              ><button class="btn">🌳ეკოლოგია და 💡კომუნალურები</button></a
+            >
+            <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script>
       document
         .querySelector(".payment-form")
@@ -48,6 +70,14 @@
           alert("გადახდა წარმატებით დასრულდა!");
           window.location.href = "economyandutilities.html";
         });
+      const togleButton = document.querySelector(".toggle-btn");
+      const secondColumn = document.querySelector(".secondColumn");
+      togleButton.addEventListener("click", () => {
+        secondColumn.classList.toggle("show");
+        togleButton.textContent = secondColumn.classList.contains("show")
+          ? "⬇"
+          : "⬆";
+      });
     </script>
   </body>
 </html>

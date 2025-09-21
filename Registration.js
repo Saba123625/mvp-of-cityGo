@@ -36,8 +36,11 @@ form.addEventListener("submit", function(e){
     };
     localStorage.setItem ("user", JSON.stringify(user));
     localStorage.setItem("isLoggedIn", "true");
+     sessionStorage.setItem("isLoggedIn", "true");
     message.style.fontSize = "1.9rem";
     message.textContent = `Welcome, ${username}! Registration successful.`;
     message.style.color = "#22ad76ff";   
+    
 });
+
 

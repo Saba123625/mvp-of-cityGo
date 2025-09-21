@@ -9,13 +9,20 @@
   </head>
   <body>
     <header>
-      <h1 class="headertitle">cityGo</h1>
+      <h1 class="headertitle">სიახლეები</h1>
       <p class="slogan"></p>
     </header>
     <main>
-      <a href="Registration.html"
-        ><button class="register">რეგისტრაცია</button></a
-      >
+      <div id="newsContainer"></div>
+      <form id="newsForm">
+        <input type="text" id="newsTitle" placeholder="სათაური" required />
+        <textarea id="newsContent" placeholder="შინაარსი" required></textarea>
+        <button type="submit">დაამატე სიახლე</button>
+      </form>
+      <p class="p-of-back" style="font-size: 1.6rem">
+        <a href="index.html">უკან დაბრუნება</a>
+      </p>
+      <div id="newsContainer"></div>
     </main>
     <footer>
       <div class="mobile-only">
@@ -37,6 +44,6 @@
         </div>
       </div>
     </footer>
-    <script src="news.js"></script>
+    <script type="module" src="news.js"></script>
   </body>
 </html>

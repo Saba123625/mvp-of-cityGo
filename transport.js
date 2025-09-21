@@ -55,3 +55,20 @@ document.querySelectorAll('.transportUL li').forEach(li => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const user = localStorage.getItem("user");          
+  const loggedIn = sessionStorage.getItem("isLoggedIn"); 
+
+ 
+  if (!user) {
+    alert("საჭიროა რეგისტრაცია!");
+    window.location.href = "Registration.html";
+    return; 
+  }
+
+  
+  if (loggedIn !== "true") {
+    alert("საჭიროა ავტორიზაცია!");
+    window.location.href = "authorization.html";
+  }
+});
