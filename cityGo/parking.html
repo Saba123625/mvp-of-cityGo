@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityGo</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward"
+    />
+    <link rel="icon" href="assests/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"
+    />
+  </head>
+  <body class="parkingbody">
+   
+    <header class="parkingheader"></header>
+    <main class="parkingmain">
+      
+      <div id="map"></div>
+    <main>
+       <p class="p-of-back" style="font-size: 1.6rem;"><a href="index.html">უკან დაბრუნება</a></p>
+      <button class="parkingButton">Start parking</button>
+    </main>
+      <footer>
+      <div class="mobile-only">
+      <div class="bottom-bar">
+        <div class="row firstColumn">
+          <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+          <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+          <button class="toggle-btn">⬆</button>
+          <a href="transport.html"
+            ><button class="btn">🚍ტრასნსპორტი</button></a
+          >
+        </div>
+        <div class="row secondColumn">
+          <a href="economyandutilities.html"
+            ><button class="btn">🌳ეკოლოგია და 💡კომუნალურები</button></a
+          >
+          <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+<script src="https://unpkg.com/lrm-openrouteservice/dist/lrm-openrouteservice.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>

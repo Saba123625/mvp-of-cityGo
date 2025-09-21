@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityGo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assests/favicon.png" type="image/png" />
+  </head>
+  <body class="payment-body">
+    <main class="payment-container">
+      <h1 class="title">💳 გადასახადის გადახდა</h1>
+
+      <form class="payment-form">
+        <label>
+          ბარათის ნომერი
+          <input
+            type="text"
+            placeholder="0000 0000 0000 0000"
+            maxlength="19"
+            required
+          />
+        </label>
+
+        <label>
+          ვადის ამოწურვა
+          <input type="text" placeholder="MM/YY" maxlength="5" required />
+        </label>
+
+        <label>
+          CVV
+          <input type="password" placeholder="123" maxlength="3" required />
+        </label>
+
+        <label>
+          თანხა
+          <input type="number" placeholder="₾" required />
+        </label>
+        <p class="p-of-back" style="font-size: 1.6rem">
+          <a href="economyandutilities.html">უკან დაბრუნება</a>
+        </p>
+        <button type="submit" class="pay-btn">გადახდა</button>
+      </form>
+    </main>
+    <footer>
+      <div class="mobile-only">
+        <div class="bottom-bar">
+          <div class="row firstColumn">
+            <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+            <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+            <button class="toggle-btn">⬆</button>
+            <a href="transport.html"
+              ><button class="btn">🚍ტრასნსპორტი</button></a
+            >
+          </div>
+          <div class="row secondColumn">
+            <a href="economyandutilities.html"
+              ><button class="btn">🌳ეკოლოგია და 💡კომუნალურები</button></a
+            >
+            <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".payment-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("გადახდა წარმატებით დასრულდა!");
+          window.location.href = "economyandutilities.html";
+        });
+      const togleButton = document.querySelector(".toggle-btn");
+      const secondColumn = document.querySelector(".secondColumn");
+      togleButton.addEventListener("click", () => {
+        secondColumn.classList.toggle("show");
+        togleButton.textContent = secondColumn.classList.contains("show")
+          ? "⬇"
+          : "⬆";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CityGo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assests/favicon.png" type="image/png" />
+  </head>
+  <body class="Registration-page">
+    <header>
+      <h1
+        style="color: rgba(0, 66, 57, 1); font-size: 3rem; text-align: center"
+      >
+        ავტორიზაცია
+      </h1>
+      <div class="form-container">
+        <form id="registrationForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <p class="p-of-back" style="font-size: 1.6rem">
+            <a href="index.html">უკან დაბრუნება</a>
+          </p>
+          <div class="register-btn-div">
+            <button type="submit" class="register-btn">ავტორიზაცია</button>
+          </div>
+        </form>
+        <p id="message"></p>
+      </div>
+    </header>
+    <footer>
+      <div class="mobile-only">
+        <div class="bottom-bar">
+          <div class="row firstColumn">
+            <a href="index.html"><button class="btn">🏠მთავარი</button></a>
+            <a href="parking.html"><button class="btn">🅿️პარკინგი</button></a>
+            <button class="toggle-btn">⬆</button>
+            <a href="transport.html"
+              ><button class="btn">🚍ტრასნსპორტი</button></a
+            >
+          </div>
+          <div class="row secondColumn">
+            <a href="economyandutilities.html"
+              ><button class="btn">🌳ეკოლოგია და 💡კომუნალურები</button></a
+            >
+            <a href="news.html"><button class="btn">📰სიახლეები</button></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="authorization.js"></script>
+  </body>
+</html>
