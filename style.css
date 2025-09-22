@@ -680,8 +680,8 @@ form button:hover {
 #logoutBtn:active {
   transform: scale(0.95);
 }
-@media (max-width: 500px){
+@media (max-width: 400px){
 .body-of-transport{
-  min-height: 70rem;
+  min-height: 100rem;
 }
 }
