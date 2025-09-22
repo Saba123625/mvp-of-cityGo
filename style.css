@@ -682,6 +682,6 @@ form button:hover {
 }
 @media (max-width: 400px){
 .body-of-transport{
-  min-height: 100rem;
+  min-height: 80rem;
 }
 }
