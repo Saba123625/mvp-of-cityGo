@@ -150,6 +150,22 @@ html{
       right: 4rem;
       top: 5rem;
 }
+@media(max-width: 389px){
+   .register{
+    right: 27% !important;
+    top: 28%;
+    font-size: 2rem !important;
+   }
+}
+@media (max-width: 341px){
+  #logoutBtn{
+    top: 28% !important;
+  }
+  .register{
+    right: 5% !important;
+  }
+}
+
  .register:hover {
       transform: translateY(-3px);
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);
