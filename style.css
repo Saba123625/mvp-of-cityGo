@@ -425,16 +425,36 @@ body.Registration-page{
 }
 .notificationsTitle{
     text-align: center;
+    color: #fff;
+  font-size: 2rem;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .notificationsDiv{
-    font-size: 1.4rem;
-    width: 36rem;
-    opacity: 0;
-    transition: opacity 2s; 
+     font-size: 1.4rem;
+  width: 36rem;
+ 
+  max-width: 90%;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  opacity: 0;
+  transition: opacity 2s, transform 0.5s;
+  transform: translateY(20px); 
 }
 .notificationsDiv.show {
-  opacity: 1; 
+  opacity: 1;
+  transform: translateY(0);
+}
+.notificationsDiv a {
+  color: #0066ff;
+  text-decoration: underline;
+}
+.notificationsDiv a:hover {
+  color: #0044cc;
 }
 .notificationsMainDiv{
    transform: translateY(4rem);
@@ -451,7 +471,15 @@ body.Registration-page{
     flex-direction: column;
    position: absolute;
    bottom: 29%;
+   left: 2%;
     gap: 2rem;
+}
+
+@media (max-width: 600px){
+ .notificationsDiv{
+     height: 2rem;
+     font-size: 1.15rem;
+ }
 }
 @media(min-width: 1149px){
     .notificationsDiv{
@@ -459,11 +487,19 @@ body.Registration-page{
     width: 100%;
 }
 }
+@media(max-width:433px){
+      .notificationsDiv{
+    font-size: 0.8rem !important;
+    width: 50% !important;
+   }
+}
+
 @media(max-width:499px){
       .notificationsDiv{
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 60%;
 }
+
 .img{
     width: 6rem;
     height: 6rem;
@@ -700,4 +736,16 @@ form button:hover {
 .body-of-transport{
   min-height: 80rem;
 }
+}
+.bodyeconomyutility{
+ 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
